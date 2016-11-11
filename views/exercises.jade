@@ -1,0 +1,32 @@
+extends layouts/master
+
+block title
+  h1 Please choice a exercise you want
+
+block sidebar
+  form#form_modules(action='/modules' method="POST")
+    ul.nav.nav-pills.nav-stacked.excercises
+      - all_row.forEach(function(row){
+      li(row_id=row.id)
+        a(href='javascript:;')=row.name
+      - })
+
+block sidebar-after
+  .flags
+    span.flag Correct
+    span.flag InCorrect
+
+block content
+  div.exercises_content
+    .taskbar
+      - all_row.forEach(function(row){
+          if row.id == i_d
+            p.description You would be exercised based on you learn various command on modulus page. Please make setting the problem what you want.
+      - })
+    .progress
+      .progress-bar(role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100")
+    #exercises
+      #term_demo
+    .clearfix
+      button.btn.btn-default.btn-prev Prev
+      button.btn.btn-default.btn-next.pull-right Next

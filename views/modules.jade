@@ -1,0 +1,20 @@
+extends layouts/master
+
+block content
+  if session_id == ''
+    h3 Welcome to #{title}
+  else
+    h3 Please choice a module you want.
+  .row
+    .col-md-4
+      .desc-module-x(style="min-height: 500px; background-color: #f5f5f5; padding: 10px;")
+          - all_row.forEach(function(row){
+            if row.id == i_d
+              p.description=row.description
+          - })
+    .col-md-8
+      .terminal-module-x
+        #term_demo
+  .clearfix
+    button.btn.btn-default.btn-prev Prev
+    button.btn.btn-default.btn-next.pull-right Next        

@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  div.container.page
+    header.site-header#masthead
+      div.logo-container
+        a.logo(href='http://linuxslim.com/')
+          img(src='images/logo.png')
+      div.header-main
+        div.top-menu-container
+          ul.nav-menu#menu-top-menu
+            li.menu-item#menu-item-1
+              a(href='http://localhost:3000') Home<!-- http://linuxslim.com/ -->
+            li.menu-item#menu-item-2
+              a(href='http://localhost:3000/modules') Modules<!-- http://linuxslim.com/modules --> 
+            li.menu-item#menu-item-3
+              a(href='http://localhost:3000/exercises') Exercises<!-- http://linuxslim.com/exercises  -->
+            li.menu-item#menu-item-4
+              a(href='http://localhost:3000/contact') Contact <!--  http://linuxslim.com/contact -->
+            li.menu-item#menu-item-5
+              a(href='http://localhost:3000/login') Login <!-- http://linuxslim.com/login  -->
+            li.menu-item#menu-item-6
+              a(href='http://localhost:3000/signup') Signup <!-- http://linuxslim.com/signup  -->
+    div.site-main#main
+      p.module-x-title=title
+      div#content(style='min-height:300px')
+        div.left-side-module
+          div.sidebar-wrapper
+            ul.sidebar-module 
+              li 
+                a.module-x(href="http://localhost:3000/module-x") Module 1
+              li 
+                a.module-x(href="http://localhost:3000/module-x") Module 2
+              li 
+                a.module-x(href="http://localhost:3000/module-x") Module 3
+              li 
+                a.module-x(href="http://localhost:3000/module-x") Module 4
+        div.content-module-x
+          .desc-module-x
+            p.description| The ls command is used to list all the files in a directory.   
+              | In the command window, enter the command to give a long listing of the directory /home.
+            button.btn-prev Prev
+          .terminal-module-x
+            button.btn-next Next
+          .clear-fix
+        div.clear-fix
+      div.clear-fix  
+    div.clear-fix      

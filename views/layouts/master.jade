@@ -1,0 +1,26 @@
+include ../head
+  body
+    include ../header
+    .page.container   
+      div#main
+        .page-header 
+          block title
+            h1 #{title}
+        block page-header-after
+        div.row
+          div.col-md-3
+            div#sidebar
+              .sidebar-wrapper
+                block sidebar
+                  form#form_modules(action='/modules' method="POST")
+                    ul.nav.nav-pills.nav-stacked
+                      - all_row.forEach(function(row){  
+                        li(row_id=row.id)
+                          a(href='javascript:;')=row.name
+                      - })
+            block sidebar-after
+          div.col-md-9
+            div#content 
+              block content  
+include ../footer    
+

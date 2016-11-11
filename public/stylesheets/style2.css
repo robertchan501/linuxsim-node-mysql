@@ -1,0 +1,134 @@
+/* Body */
+body {
+  background: #4e5963 url(../images/pat.png) top left repeat;
+}
+.do_active{
+  text-decoration: none;
+  background-color: #f8f5f0;
+  border-color: #dfd7ca;
+}
+.correct{
+  color: green !important;
+}
+.incorrect{
+  color: red !important;
+}
+/* Nav bar */
+#master-navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+#master-navbar > .container {
+  background-color: white;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  #master-navbar > .container {
+    padding-top: 15px;
+  }
+}
+
+#master-navbar .logo {
+  margin-top: -30px;
+}
+
+#master-navbar .navbar-toggle > .icon-bar {
+  background-color: #93c54b;
+} 
+
+#master-navbar .navbar-toggle:hover > .icon-bar,
+#master-navbar .navbar-toggle:focus > .icon-bar,
+#master-navbar .navbar-toggle:active > .icon-bar {
+  background-color: #79a736;
+}
+
+#master-navbar .menu-item > a.active {
+  color: #fff;
+  background-color: #89be3d;
+  border-radius: 5px;
+}
+
+/* Page header */
+.page-header {
+  border-bottom: none;
+  margin-top: 0;
+}
+
+.page-header h1 {
+  text-align: center;
+  text-shadow: 2px 2px 2px #333;
+  margin-top: 0;
+}
+
+/* Slider */
+#slider {
+  margin-bottom: 60px;
+}
+
+#slider > img {
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* Sidebar */
+#sidebar ul.nav {
+  border: 1px solid #dfd7ca;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Content */
+.page {
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .page { 
+    padding-top: 30px;    
+  }
+}
+
+/* Content */
+#content > h3:first-child {
+  margin-top: 0;
+}
+
+/* Term demo */
+#term_demo {
+  margin-bottom: 15px;
+}
+
+/* Excercises */
+ul.nav.excercises {
+  height: 267px;
+  overflow-y: scroll
+}
+
+.flags > .flag {
+  display: block;
+  font-size: 200%;
+  color: #ccc;
+  width: 100%;
+  /*margin-left: 10%;*/
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  border: 1px solid #dfd7ca;
+  border-radius: 5px;
+}
+
+/* Footer */
+#colophon {
+  background-color: #3e3f3a;
+}
+
+#colophon .footer-content {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}

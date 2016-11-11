@@ -1,0 +1,12 @@
+include ../head
+  body
+    include ../header
+    .page.container
+      div#main
+        .page-header
+          block title
+            h1 #{title}
+        div#content 
+          block content
+include ../footer    
+
